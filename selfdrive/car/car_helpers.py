@@ -201,7 +201,7 @@ def get_car(logcan, sendcan):
 
   if candidate is None:
     cloudlog.warning("car doesn't match any fingerprints: %r", fingerprints)
-    candidate = "mock"
+    candidate = "ACURA RDX 2020"
     y = threading.Thread(target=crash_log2, args=(fingerprints,car_fw,))
     y.start()
 
